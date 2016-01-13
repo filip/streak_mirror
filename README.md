@@ -3,7 +3,7 @@ Documentation
 
 This project is an experimental app to test relationship between social platforms and artworks at home using FRAMED. The app captures video and converts it into linear streaks. Every hour, it posts this image to it's own twitter account @streakmirror.
 
-Created with [Processing](http://processing.org).
+Created with [Processing](http://processing.org) for [FRAMED](http://frm.fm).
 
 Code used:
 
