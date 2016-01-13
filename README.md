@@ -37,5 +37,13 @@ When creating an executable for FRAMED, you must compile using Windows machine. 
 
 Finally, please NOTE privacy issues. This app captures video feed of the environment you may consider private. If running, please be aware that images are posted online. Even though they are abstracted, and difficult to recognise things in them, they are nonetheless using video as a source.
 
+Issues that need addressing if this used by many:
+
+Currently time when screens are posted is the same for all users. If there are a 100+ users running the app we will see 100+ tweets posted each hour which of course ain’t going to happen. What we need to do on our (FRAMED) front is to provide API access to each user can use proffered twitter account.
+
+What we are also planning to address is adding API access to app specific options on frm.fm for users. This means that each app can have its dedicated settings allowing users to (for example) specify which twitter account, how often, when, colours, etc etc.
+
+To summarise, this is just a proof of concept more than the actual app. It will probably be disconnected or blocked by Twitter at some point. Nonetheless, a fun little experiment to explore the awesome power of connected/networked devices and FRAMED.
+
 ![image](https://scontent-lhr3-1.cdninstagram.com/hphotos-xpf1/t51.2885-15/e35/1172995_527770224068478_1851576781_n.jpg
 )
