@@ -5,7 +5,7 @@ This project is an experimental app to test relationship between social platform
 
 Code used:
 
-• twitterTools by phil langley [https://github.com/phiLangley/twitterTools](https://frm.fm/a/filip_visnjic/streak_mirror)
+• twitterTools by phil langley [https://github.com/phiLangley/twitterTools](https://github.com/phiLangley/twitterTools)
 
 • Mirror 2 by Daniel Shiffman (examples available in Processing)
 
