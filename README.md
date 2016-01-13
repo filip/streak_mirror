@@ -9,7 +9,7 @@ Code used:
 
 • twitterTools by phil langley [https://github.com/phiLangley/twitterTools](https://github.com/phiLangley/twitterTools)
 
-• Mirror 2 by Daniel Shiffman (examples available in Processing)
+• [Mirror 2 by Daniel Shiffman](https://github.com/processing/processing-video/blob/master/examples/Capture/Mirror2/Mirror2.pde) (examples available in Processing)
 
 What does it do:
 
@@ -19,7 +19,7 @@ What does it do:
 
 • Rectangle colour is derived depending on the time of the day (clock) – r,g,b = seconds, minutes, hours
 
-• Screencapture is tweeted to the public Twitter account @streakmirror (5 minutes past the hour)
+• Screencapture is tweeted to the public Twitter account [@streakmirror](https://twitter.com/streakmirror) (5 minutes past the hour)
 
 The app runs on FRAMED.
 See it here: [https://frm.fm/a/filip_visnjic/streak_mirror](https://frm.fm/a/filip_visnjic/streak_mirror)
@@ -36,3 +36,6 @@ If using Processing 3 and above you require video libraries.
 When creating an executable for FRAMED, you must compile using Windows machine. Even though Mac versions of Processing can output Windows 32bit executables that work on FRAMED, when working with external libraries (like Video) for some reason they do not. Please try to compile and prepare your executables in Windows to ensure they will be fully functional on FRAMED.
 
 Finally, please NOTE privacy issues. This app captures video feed of the environment you may consider private. If running, please be aware that images are posted online. Even though they are abstracted, and difficult to recognise things in them, they are nonetheless using video as a source.
+
+![image](https://scontent-lhr3-1.cdninstagram.com/hphotos-xpf1/t51.2885-15/e35/1172995_527770224068478_1851576781_n.jpg
+)
