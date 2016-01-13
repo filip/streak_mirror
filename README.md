@@ -34,3 +34,5 @@ Once you have these, you can enter them in the twitterConfig tab of the processi
 If using Processing 3 and above you require video libraries.
 
 When creating an executable for FRAMED, you must compile using Windows machine. Even though Mac versions of Processing can output Windows 32bit executables that work on FRAMED, when working with external libraries (like Video) for some reason they do not. Please try to compile and prepare your executables in Windows to ensure they will be fully functional on FRAMED.
+
+Finally, please NOTE privacy issues. This app captures video feed of the environment you may consider private. If running, please be aware that images are posted online. Even though they are abstracted, and difficult to recognise things in them, they are nonetheless using video as a source.
