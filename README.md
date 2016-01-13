@@ -3,6 +3,8 @@ Documentation
 
 This project is an experimental app to test relationship between social platforms and artworks at home using FRAMED. The app captures video and converts it into linear streaks. Every hour, it posts this image to it's own twitter account @streakmirror.
 
+Created with [Processing](http://processing.org).
+
 Code used:
 
 • twitterTools by phil langley [https://github.com/phiLangley/twitterTools](https://github.com/phiLangley/twitterTools)
@@ -29,3 +31,6 @@ You need to 'create an app' from your twitter account in order to generate the o
 
 Once you have these, you can enter them in the twitterConfig tab of the processing sketch
 
+If using Processing 3 and above you require video libraries.
+
+When creating an executable for FRAMED, you must compile using Windows machine. Even though Mac versions of Processing can output Windows 32bit executables that work on FRAMED, when working with external libraries (like Video) for some reason they do not. Please try to compile and prepare your executables in Windows to ensure they will be fully functional on FRAMED.
