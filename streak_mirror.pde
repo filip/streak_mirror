@@ -21,6 +21,8 @@ double[][] streamLocations = {{51.4, -0.13}, {51.6, -0.11}};
 
 
 import processing.video.*;
+import gab.opencv.*;
+import java.awt.*;
 
 // Size of each cell in the grid
 int cellSize = 15;
@@ -29,22 +31,32 @@ int cellSize = 15;
 int cols, rows;
 // Variable for capture device
 Capture video;
+OpenCV opencv;
+
+int multiplier;
 
 void setup(){
   //////////////////establish twitter connection
   connectTwitter();
   //////////////////establish twitter connection
-  size(1080, 1920);
+  //size(1080, 1920);
   //size(540,960);
-  //size(640,480);
+  size(640,480);
   // Define colors
+
+  multiplier = 1;
   
   cols = 640 / cellSize;
   rows = 480 / cellSize;
   colorMode(RGB, 255, 255, 255, 100);
   rectMode(CENTER);
   
+  //video = new Capture(this, 640/2, 480/2);
+  //opencv = new OpenCV(this, 640/2, 480/2);
   video = new Capture(this, 640, 480);
+  opencv = new OpenCV(this, 640, 480); 
+  opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
+
   video.start();  
   
   background(0);
@@ -56,12 +68,28 @@ void draw(){
   
   if (video.available()) {
     video.read();
-    video.loadPixels();
+    //video.loadPixels();
     
-    translate(-width/2,0);
-    scale(4,4);
-    //scale(2,2);
+    //translate(-width/2,0);
+    //scale(4,4);
+    //scale(2);
     
+    opencv.loadImage(video);
+
+    //image(video, 0, 0 );
+    
+    noFill();
+    stroke(0, 255, 0);
+    strokeWeight(0.2);
+    Rectangle[] faces = opencv.detect();
+    //println(faces.length);
+
+    for (int i = 0; i < faces.length; i++) {
+      //println(faces[i].x + "," + faces[i].y);
+      rect(faces[i].x, faces[i].y, faces[i].width, faces[i].height);
+    }    
+
+
     // Begin loop for columns
     for (int i = 0; i < cols;i++) {
       // Begin loop for rows
@@ -90,4 +118,8 @@ void draw(){
   if (minute() == 0 && second() == 0){
    tweetNewImage(); 
   }
+}
+
+void captureEvent(Capture c) {
+  c.read();
 }
